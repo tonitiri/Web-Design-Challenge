@@ -1,159 +1,226 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
-  <title>Bootstrap Demo</title>
-
-  <!-- Bring in our bootstrap stylesheet -->
+  <title>My Web Project</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="homework.css">
 </head>
-
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">WeatherPy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <!-- Our rows function in containers (grid created). -->
-  <div class="container">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="homeworkmain.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="weather_data.html">Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="homework2.html">Comparison</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Cloudiness.html">cloudiness</a>
+            <a class="dropdown-item" href="Humidity.html">humidity</a>
+            <a class="dropdown-item" href="Temp.html">temperature</a>
+            <a class="dropdown-item" href="Windspeed.html">windspeed</a>
 
-    <!-- Our columns function in rows. -->
-    <div class="row">
-
-      <!-- Columns have 12 areas of width to work with. -->
-
-      <!-- One third of screen (4/12) -->
-      <div class="col-md-4">
-        <!-- This is column 1 of 3 -->
-      </div>
-
-      <!-- One third of screen (4/12) -->
-      <div class="col-md-4">
-        <!-- This is column 2 of 3 -->
-      </div>
-
-      <!-- One third of screen (4/12) -->
-      <div class="col-md-4">
-
-        <!-- This is column 3 of 3 -->
-      </div>
-
-      <!-- Columns float left, so all adjacent rows will appear next to each other (as long as not all space gets taken up) -->
+            <!-- <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a> -->
+          </div>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
     </div>
+  </nav>
 
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome To My Weather_Py!</h1>
+                <!-- Image -->
+                <img src="assets\1234.jpg" alt="global weather" width="700" height="300">
+      <p class="lead">This project is designed to storytell the global data occurences using a sample size of 550 cities. Its purpose is to analyze how weather changes as 
+        one gets closer to the equator. To accomplish this analysis, I first pulled data from the OpenWeathermap API to assemble a dataset on 
+        over 500 cities. After assembling the dataset, I used Matplotlib to plot various aspects of the weather against the city latitudes. 
+        Factors considered included temperature, cloudiness, windspeed and humidity, all explained in the drop down menu. This site provides 
+        the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and 
+        correlations witnessed as at the 29th of September 2019.</p>
+      <hr class="my-4">
+      <!-- <p></p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+    </div>
   </div>
 
-
-  <!-- Creates the Overall Grid -->
-  <div class="container">
-
-    <!-- First Row -->
+<!-- <div class="container">
+  <h3 class="text-center">Thumbnails</h3>
     <div class="row">
-
-      <!-- First (and only column) -->
-      <div class="col-md-12">
-        <h1>I'm a size 12 column. I am the only column on my row. I stretch the entire width. And keep going.</h1>
-      </div>
-    </div>
-
-    <!-- Second Row -->
-    <div class="row">
-
-      <!-- First of two columns -->
-      <div class="col-md-6">
-        <h1>I'm a size 6 column. I take up half a 12 column row</h1>
-      </div>
-
-      <!-- Second of two columns -->
-      <div class="col-md-6">
-        <h1>I'm a size 6 column. I take up half a 12 column row</h1>
-      </div>
-    </div>
-
-    <!--Third Row-->
-    <div class="row">
-      <!--First of Two Columns-->
-      <div class="col-md-8">
-        <h1>Columns don't need to be the same size. I'm a size 8 column.</h1>
-      </div>
-      <!--Second of Two Columns-->
-      <div class="col-md-4">
-        <h1>They just need to fill 12 columns or less per row. I'm a 4 column.</h1>
-      </div>
-    </div>
-
-    <!--Fourth Row-->
-    <div class="row">
-      <!--First and Only Column in this Row-->
-      <div class="col-md-6">
-        <h1>We can leave part of a row blank, by just not filling it up. I'm a size 6 column</h1>
-      </div>
-    </div>
-
-    <!--Fifth Row-->
-    <div class="row justify-content-end">
-      <!--First and Only Column in this Row-->
-      <!--Notice how horizontally aligned this column to the right-->
-      <div class="col-md-6">
-        <h1>We can also offset a column if we want. I'm a size 6 column, justified to the end of the row</h1>
-      </div>
-    </div>
-
-    <!--Sixth Row-->
-    <div class="row">
-      <!--First and Only Column in this Row-->
-      <div class="col-md-12">
-        <h1>The important things to remember are these:</h1>
-        <h3>1. Columns go inside rows. <small>container &gt; row &gt; column</small></h3>
-        <h3>2. Only 12 columns or less per row.</h3>
-        <h3>3. Rows go inside containers.</h3>
-        <h3>4. Don't try and change the grid.</h3>
-      </div>
-    </div>
-
-    <!--Seventh Row-->
-    <div class="row">
-      <!--First Column in this Row-->
-      <div class="col-md-6">
-        <div class="box">
-          <h1>If you want to change an element inside the grid, then add CSS to the element inside the grid. Not the grid itself.</h1>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg" alt="..." class="img-thumbnail">
+          </div>
+          <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
         </div>
-      </div>
-
-      <!--Second Column in this Row-->
-      <div class="col-md-6">
-        <div class="box">
-          <h1>Adding CSS directly to the grid will probably break things elsewhere, as that isn't the intended usage.</h1>
+        <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg" alt="..." class="img-thumbnail">
+            </div>
+          <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
         </div>
-      </div>
-    </div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg" alt="..." class="img-thumbnail">
+            </div>
+            <div class="caption">
+                <h3>Thumbnail label</h3>
+                <p>...</p>
+                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+    </div> -->
 
-    <!--Eighth Row-->
-    <div class="row">
-      <div class="alert alert-primary" role="alert">
-        I am a component that doesn't have a column
-      </div>
+  <!-- <div class="row">
+    <div class="col">
+        <h3 class="text-center">List Groups</h3>
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+              Cras justo odio <span class="badge badge-pill badge-secondary">10</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+              Cras justo odio <span class="badge badge-pill badge-secondary">3</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+              Cras justo odio <span class="badge badge-pill badge-secondary">4</span>
+          </li>
+        </ul>
     </div>
+  </div>
+
 
     <div class="row">
       <div class="col">
-        <div class="alert alert-primary" role="alert">
-          I am a component that will take up a full column.
+        <h3 class="text-center">Cards</h3>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
     </div>
 
-    </div>
 
-    <!--Ninth Row-->
+  <div class="row">
+    <div class="col">
+      <h3 class="text-center">Nav Tabs</h3>
+      <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+
     <div class="row">
-      <!--First and Only Column in this Row-->
-      <div class="col-md-12">
-        <h1>Using Bootstrap doesn't mean we're never writing CSS again.</h1>
-        <h1>But we can build websites much faster without having to write <strong><i>ALL</i></strong> of the CSS ourselves.</h1>
+      <div class="col">
+        <h3 class="text-center">Nav Pills</h3>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+    </div> -->
+
+<!-- 
+    <div class="row">
+      <div class="col">
+        <h3 class="text-center">Alerts</h3>
+        <div class="alert alert-primary" role="alert">
+            Info Alert
+          </div>
+          <div class="alert alert-success" role="alert">
+            Success Alert
+          </div>
+          <div class="alert alert-danger" role="alert">
+            Danger Alert
+          </div>
+          <div class="alert alert-warning" role="alert">
+            Warning Alert
+          </div>
+        </div>
+    </div> -->
+
+
+    <!-- <div class="row">
+      <div class="col">
+        <h3 class="text-center">Progress Bar</h3>
+          <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                50%
+              </div>
+          </div>
       </div>
     </div>
 
-  </div>
+    <h3 class="text-center">Buttons</h3>
+    <div class="row">
+
+      <button type="button" class="btn btn-default">Default Button</button>
+      <button type="button" class="btn btn-primary">Primary Button</button>
+      <button type="button" class="btn btn-danger">Danger Button</button>
+      <button type="button" class="btn btn-info">Info Button</button>
+      <button type="button" class="btn btn-warning">Warning Button</button>
+    </div>
+  </div> -->
+
 
 </body>
 
