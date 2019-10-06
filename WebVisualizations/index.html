@@ -1,82 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>My Web Project</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Web Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="homework.css">
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">WeatherPy</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <link rel="stylesheet" href="homework.css">
+  </head>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="weather_data.html">Data</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="homework2.html">Comparison</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="Cloudiness.html">cloudiness</a>
-            <a class="dropdown-item" href="Humidity.html">humidity</a>
-            <a class="dropdown-item" href="Temp.html">temperature</a>
-            <a class="dropdown-item" href="Windspeed.html">windspeed</a>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">WeatherPy</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <!-- <div class="dropdown-divider"></div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="weather_data.html">Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="homework2.html">Comparison</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Cloudiness.html">cloudiness</a>
+              <a class="dropdown-item" href="Humidity.html">humidity</a>
+              <a class="dropdown-item" href="Temp.html">temperature</a>
+              <a class="dropdown-item" href="Windspeed.html">windspeed</a>
+
+              <!-- <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a> -->
-          </div>
-        </li>
-        <!-- <li class="nav-item">
+            </div>
+          </li>
+          <!-- <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li> -->
-      </ul>
-      <!-- <form class="form-inline my-2 my-lg-0">
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form> -->
-    </div>
-  </nav>
+      </div>
+    </nav>
 
-  <div class="container">
-    <div class="jumbotron">
-      <h1 class="display-4"><b>Welcome To My Weather_Py!</b></h1>
-                <!-- Image -->
-                <img src="assets\1234.jpg" alt="global weather" width="500" height="300">
-                <img src="assets\2345.jpg" alt="global weather" width="500" height="300">
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4"><b>Welcome To My Weather_Py!</b></h1>
+        <!-- Image -->
+        <img src="assets\1234.jpg" alt="global weather" width="500" height="300">
+        <img src="assets\2345.jpg" alt="global weather" width="500" height="300">
 
-              </div>
-    <div>
-      <p class="lead">This project is designed to storytell the global data occurences using a sample size of 550 cities. Its purpose is to analyze how weather changes as 
-        one gets closer to the equator. To accomplish this analysis, I first pulled data from the OpenWeathermap API to assemble a dataset on 
-        the cities. After assembling the dataset, I used Matplotlib to plot various aspects of the weather against the city latitudes. 
-        Factors considered included temperature, cloudiness, windspeed and humidity, all explained in the drop down menu. This highly interactive site provides 
-        the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and 
-        correlations witnessed as at the 29th of September 2019.</p>
-      <hr class="my-4">
-      <!-- <p></p>
+      </div>
+      <div>
+        <p class="lead box">This project is designed to storytell the global data occurences using a sample size of 550
+          cities. Its purpose is to analyze how weather changes as
+          one gets closer to the equator. To accomplish this analysis, I first pulled data from the OpenWeathermap API
+          to assemble a dataset on
+          the cities. After assembling the dataset, I used Matplotlib to plot various aspects of the weather against the
+          city latitudes.
+          Factors considered included temperature, cloudiness, windspeed and humidity, all explained in the drop down
+          menu. This highly interactive site provides
+          the source data and visualizations created as part of the analysis, as well as explanations and descriptions
+          of any trends and
+          correlations witnessed as at the 29th of September 2019.</p>
+        <hr class="my-4">
+        <!-- <p></p>
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+      </div>
     </div>
-  </div>
 
-<!-- <div class="container">
+    <!-- <div class="container">
   <h3 class="text-center">Thumbnails</h3>
     <div class="row">
         <div class="col-md-4">
@@ -111,7 +126,7 @@
         </div>
     </div> -->
 
-  <!-- <div class="row">
+    <!-- <div class="row">
     <div class="col">
         <h3 class="text-center">List Groups</h3>
         <ul class="list-group">
@@ -183,7 +198,7 @@
         </div>
     </div> -->
 
-<!-- 
+    <!--
     <div class="row">
       <div class="col">
         <h3 class="text-center">Alerts</h3>
@@ -226,6 +241,6 @@
   </div> -->
 
 
-</body>
+  </body>
 
 </html>
