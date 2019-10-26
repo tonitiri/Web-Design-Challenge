@@ -16,6 +16,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="weather.js"></script>
 
     <link rel="stylesheet" href="homework.css">
   </head>
@@ -59,15 +61,18 @@
             </li> -->
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <input class="form-control mr-sm-2" id="city" type="search" placeholder="Jamestown" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" id="citysearch" type="submit">Search</button>
+          <button class="btn btn-outline-success my-2 my-sm-0" id="resetAllButton" type="button">Reset All</button>
+          <!-- <button class = id="resetAllButton">Reset All</button> -->
+          <!-- <button id="filter-reset" type="button" class="btn btn-default">Reset All</button> -->
         </form>
       </div>
     </nav>
 
     <h3>Global Cities Data Table</h3>
 
-    <table border="1" class="table table-striped table-bordered table-hover">
+    <table id="weather" border="1" class="table table-striped table-bordered table-hover">
       <thead>
         <tr style="text-align: right;">
           <th></th>
@@ -6697,6 +6702,17 @@
         </tr>
       </tbody>
     </table>
+
+    <!-- <div class="row">
+
+      <button type="button" class="btn btn-default">Default Button</button>
+      <button type="button" class="btn btn-primary">Primary Button</button>
+      <button type="button" class="btn btn-danger">Danger Button</button>
+      <button type="button" class="btn btn-info">Info Button</button>
+      <button type="button" class="btn btn-warning">Warning Button</button>
+    </div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="app.js"></script>
 
   </body>
 
