@@ -20,6 +20,7 @@ function buildTable(city_data) {
     city_data.forEach(city => {
         var row = tableBody.append("tr");
 
+        row.append("td").text(city.id);
         row.append("td").text(city.city);
         row.append("td").text(city.lat);
         row.append("td").text(city.lng);
